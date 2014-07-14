@@ -4,7 +4,7 @@ IMPORTS
 ===============================
 */
 
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 /*
 ===============================
@@ -30,6 +30,8 @@ body {
 	background-color: #E1F3F6;
 	background: url('../imgs/60-lines.png') #E1F3F6;
 
+	font-family: 'Raleway', 'Droid Sans', 'Arial', sans-serif;
+
 	-webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -40,7 +42,6 @@ h1 {
 	font-weight: bold;
 	color: #041520;
 	font-size: 80px;
-	font-family: 'Droid Sans', 'Arial', sans-serif;
 	display: block;
 	text-align: center;
 	margin-top: 10px;
@@ -99,7 +100,7 @@ CONTENT
 	height: auto;
 	border-radius: 50%;
 	background-color: black;
-	box-shadow: 5px 5px 12px black;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
 }
 
 .wrapper {
@@ -108,7 +109,7 @@ CONTENT
 	border-radius: 3px 3px 0 0;
 	border-top: 10px outset;
 	background-color: rgba(255, 255, 255, .6);
-	box-shadow: 3px 3px 5px black;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
 	width: 90%;
 	max-width: 700px
 }
@@ -145,23 +146,24 @@ TOOLS
 	text-align: center;
 }
 
-.tools-list {
-	
+.tools-list a {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .tools-list li {
 	border-bottom: 2px solid lightgrey;
 	border-radius: 0px;
-	padding: 10px;
 	margin: 0px 0;
 	text-align: center;
 }
 
-.tools-list > a:first-child li {
+.tools-list li:first-child a {
 	border-top: 2px solid lightgrey;
 }
 
-.tools-list a:hover li {
+.tools-list a:hover {
 	background-color: #ADD5DC;
 	-webkit-transition: background-color .20s ease-in;
 	   -moz-transition: background-color .20s ease-in;
@@ -170,7 +172,7 @@ TOOLS
    		    transition: background-color .20s ease-in;
 }
 
-.tools-list a:focus li {
+.tools-list a:focus {
 	background-color: #76AFBA;
 	-webkit-transition: background-color .20s ease-in;
 	   -moz-transition: background-color .20s ease-in;
@@ -179,8 +181,8 @@ TOOLS
    		    transition: background-color .20s ease-in;
 }
 
-.tools-list a:active li {
-	background-color: #76AFBA;
+.tools-list a:active {
+	background-color: #ADD5DC;
 	-webkit-transition: background-color .20s ease-in;
 	   -moz-transition: background-color .20s ease-in;
 	     -o-transition: background-color .20s ease-in;
@@ -188,38 +190,18 @@ TOOLS
    		    transition: background-color .20s ease-in;
 }
 
-span[class*='tools-img-'] {
-	height: 100px;
-	width: 100px;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-	display: inline-block;
+.tools-list a {
+	-webkit-transition: background-color .20s ease-in;
+	   -moz-transition: background-color .20s ease-in;
+	     -o-transition: background-color .20s ease-in;
+	    -ms-transition: background-color .20s ease-in;
+   		    transition: background-color .20s ease-in;
 }
 
-
-.tools-img-html {
-	background: url('../imgs/icons/html5.png');
+.tools-img {
+	padding: 10px;
 }
 
-.tools-img-css {
-	background: url('../imgs/icons/css.png');
-}
-
-
-.tools-img-mint {
-	background: url('../imgs/icons/mint.png');
-}
-
-
-.tools-img-git {
-	background: url('../imgs/icons/git.png');
-}
-
-
-.tools-img-sublime {
-	background: url('../imgs/icons/sublime.png');
-}
 
 
 /*
@@ -232,18 +214,18 @@ nav {
 	text-align: center;
 }
 
-.nav-link {
+.nav-list li{
 	display: inline-block;
 	font-size: 18px;
 }
 
 .separator:after,
-.nav-link {
-	letter-spacing: .4em;
+.nav-list li {
+	letter-spacing: .3em;
 }
 
 .separator:after {
-	content: "|";
+	content: " | ";
 	font-style: oblique;
 	color: #011523;
 }
