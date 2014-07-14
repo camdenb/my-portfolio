@@ -1,0 +1,11 @@
+/* glue: 0.3 hash: 7b9446b8cb */
+.sprite-icons-html5,
+.sprite-icons-git,
+.sprite-icons-css,
+.sprite-icons-mint,
+.sprite-icons-sublime{background-image:url('icons.png');background-repeat:no-repeat}
+.sprite-icons-html5{background-position:0px 0px;width:256px;height:360px;}
+.sprite-icons-git{background-position:0px -360px;width:300px;height:300px;}
+.sprite-icons-css{background-position:0px -660px;width:211px;height:299px;}
+.sprite-icons-mint{background-position:0px -959px;width:286px;height:256px;}
+.sprite-icons-sublime{background-position:0px -1215px;width:251px;height:215px;}

@@ -28,7 +28,7 @@ html {
 
 body {
 	background-color: #E1F3F6;
-
+	background: url('../imgs/60-lines.png') #E1F3F6;
 
 	-webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -61,7 +61,7 @@ CONTENT
 .title-box {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;	
+	width: 70%;	
 }
 
 .title-box {
@@ -70,9 +70,17 @@ CONTENT
 
 .section-title {
 	font-size: 40px;
-	padding: 0px;
+	padding: 10px;
 	text-align: center;
 }
+
+.section-subtitle {
+	font-size: 14px;
+	font-style: oblique;
+	text-align: center;
+	color: grey;
+}
+
 
 .content-box {
 	margin-top: 20px;
@@ -80,7 +88,7 @@ CONTENT
 
 .content-box p {
 	text-align: justify;
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 
@@ -99,10 +107,10 @@ CONTENT
 	padding: 10px 0 30px 0;
 	border-radius: 3px 3px 0 0;
 	border-top: 10px outset;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, .6);
 	box-shadow: 3px 3px 5px black;
 	width: 90%;
-	max-width: 1000px
+	max-width: 700px
 }
 
 .wrapper-about {
@@ -128,7 +136,7 @@ CONTENT
 
 /*
 ===============================
-MINIGRID
+TOOLS
 ===============================
 */
 
@@ -142,7 +150,6 @@ MINIGRID
 }
 
 .tools-list li {
-	background-color: white;
 	border-bottom: 2px solid lightgrey;
 	border-radius: 0px;
 	padding: 10px;
@@ -155,13 +162,65 @@ MINIGRID
 }
 
 .tools-list a:hover li {
-	background-color: lightgrey;
+	background-color: #ADD5DC;
 	-webkit-transition: background-color .20s ease-in;
 	   -moz-transition: background-color .20s ease-in;
 	     -o-transition: background-color .20s ease-in;
 	    -ms-transition: background-color .20s ease-in;
    		    transition: background-color .20s ease-in;
 }
+
+.tools-list a:focus li {
+	background-color: #76AFBA;
+	-webkit-transition: background-color .20s ease-in;
+	   -moz-transition: background-color .20s ease-in;
+	     -o-transition: background-color .20s ease-in;
+	    -ms-transition: background-color .20s ease-in;
+   		    transition: background-color .20s ease-in;
+}
+
+.tools-list a:active li {
+	background-color: #76AFBA;
+	-webkit-transition: background-color .20s ease-in;
+	   -moz-transition: background-color .20s ease-in;
+	     -o-transition: background-color .20s ease-in;
+	    -ms-transition: background-color .20s ease-in;
+   		    transition: background-color .20s ease-in;
+}
+
+span[class*='tools-img-'] {
+	height: 100px;
+	width: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	display: inline-block;
+}
+
+
+.tools-img-html {
+	background: url('../imgs/icons/html5.png');
+}
+
+.tools-img-css {
+	background: url('../imgs/icons/css.png');
+}
+
+
+.tools-img-mint {
+	background: url('../imgs/icons/mint.png');
+}
+
+
+.tools-img-git {
+	background: url('../imgs/icons/git.png');
+}
+
+
+.tools-img-sublime {
+	background: url('../imgs/icons/sublime.png');
+}
+
 
 /*
 ===============================
